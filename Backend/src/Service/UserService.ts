@@ -148,7 +148,7 @@ export class UserService extends Service {
      * @param id 用戶_id
      * @returns resp
      */
-    public async deletedById(id:string){
+    public async deletedById(id:string): Promise<resp<DBResp<Student> | undefined>>{
         const resp: resp<any> ={
             code: 200,
             message: "",
@@ -175,7 +175,7 @@ export class UserService extends Service {
      * @param name 用戶名稱
      * @returns resp
      */
-    public async deletedByName(name: string){
+    public async deletedByName(name: string): Promise<resp<DBResp<Student> | undefined>>{
         const resp: resp<any> ={
             code: 200,
             message: "",
@@ -284,7 +284,7 @@ export class UserService extends Service {
      * @param name 用戶名稱
      * @returns resp
      */
-    public async findByName(name: string){
+    public async findByName(name: string): Promise<resp<DBResp<Student> | undefined>>{
         const resp: resp<DBResp<Student> | undefined> ={
             code: 200,
             message: "",
