@@ -1,0 +1,94 @@
+/* 用戶資料容器初始隱藏並帶有動畫效果 */
+.user_data_container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.user_data_container.show {
+    opacity: 1;
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+/* 其他樣式保持一致 */
+/* 容器樣式 */
+.update_container {
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* 讓所有內容居中 */
+}
+
+/* 單選框容器 */
+.update_container div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* 單選框樣式 */
+.update_container label,
+.user_data_container label {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.update_container input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #2691d9; /* 修改選中時的顏色 */
+}
+
+/* 輸入框樣式 */
+.update_container input[type="text"],
+.user_data_container input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.update_container input[type="text"]:focus,
+.user_data_container input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 按鈕樣式 */
+.update_container button,
+.user_data_container button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #2691d9; /* 藍色背景 */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update_container button:hover,
+.user_data_container button:hover {
+    background: #1b5e86; /* 深藍色背景 */
+}
+.message {
+    margin-top: 10px
+}
