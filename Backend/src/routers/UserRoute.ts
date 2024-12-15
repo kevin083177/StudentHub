@@ -19,6 +19,14 @@ export class UserRoute extends Route{
             this.Contorller.findAll(req, res);
         })
 
+        this.router.get(`${this.url}findByName`,(req, res)=>{
+            this.Contorller.findByName(req, res);
+        })
+
+        this.router.get(`${this.url}findById`,(req, res)=>{
+            this.Contorller.findById(req, res);
+        })
+
         /**
          * 新增學生
          * request body {
@@ -34,5 +42,21 @@ export class UserRoute extends Route{
         this.router.post(`${this.url}insertOne`,(req, res)=>{
             this.Contorller.insertOne(req, res);
         })
+
+        this.router.delete(`${this.url}deletedById`,(req, res)=>{
+            this.Contorller.deletedById(req, res);
+        })
+
+        this.router.delete(`${this.url}deletedByName`,(req, res)=>{
+            this.Contorller.deletedByName(req, res);
+        })
+
+        this.router.put(`${this.url}updateByName`,(req, res)=>{
+            this.Contorller.updateByName(req, res);
+        })
+        this.router.put(`${this.url}updateById`,(req, res)=>{
+            this.Contorller.updateById(req, res);
+        })
+
     }
 }
