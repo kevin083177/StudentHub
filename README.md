@@ -1,12 +1,12 @@
 ## 安裝與執行指引
-#### **1. 下載專案**
+### **1. 下載專案**
 克隆專案並切換至專案目錄
 ```bash
 git clone https://github.com/kevin083177/StudentHub.git
 cd yourPath/StudentHub
 ```
 
-#### **2. 前端安裝與執行**
+### **2. 前端安裝與執行**
 進入前端`Frontend`目錄，安裝依賴並執行
 ```bash
 cd Frontend
@@ -24,7 +24,7 @@ VITE_IP = api_url   #api位置
 npm run dev
 ```
 
-#### 3. **後端安裝與執行**
+### 3. **後端安裝與執行**
 進入後端`Backend`目錄，安裝依賴並執行
 ```bash
 cd Backend
@@ -52,9 +52,9 @@ privateKey=key            # 私密金鑰
 npm run dev
 ```
 
-#### 4. **資料庫連線**
-系統使用 MongoDB 作為資料庫，請確保安裝並啟動 MongoDB。
-使用 `students` collection 並參考範例數據檔案：`studentslist.csv`。
+### 4. **資料庫連線**
+系統使用 MongoDB 作為資料庫，請確保安裝並啟動 MongoDB。  
+使用 `students` collection 並參考範例數據檔案：`studentslist.csv`。  
 範例資料：
 ```json
 {
@@ -69,7 +69,7 @@ npm run dev
 ```
 
 ## API 規格說明
-#### 1.查詢所有學生資料
+### 1.查詢所有學生資料
 + **URL**
     + `GET /api/v1/user/findAll`
 + ###### Response
@@ -92,7 +92,7 @@ npm run dev
             ]
         }
         ```
-#### 2.根據 ID 或姓名查詢學生資料
+### 2.根據 ID 或姓名查詢學生資料
 + **URL**
     + `GET /api/v1/user/findById`
     + `GET /api/v1/user/findByName`
@@ -138,7 +138,7 @@ npm run dev
             "message": "server error"
         }
         ```
-#### 3.新增學生資料
+### 3.新增學生資料
 + **URL**
     + `POST /api/v1/user/insertOne`
 + ###### Request
@@ -190,7 +190,7 @@ npm run dev
         "message": "server error"
     }
     ```
-#### 4.根據 ID 或姓名刪除學生資料
+### 4.根據 ID 或姓名刪除學生資料
 + **URL** 
     + `DELETE /api/v1/user/DeleteById`
     + `DELETE /api/v1/user/DeleteByName`
@@ -228,7 +228,7 @@ npm run dev
         "message": "server error"
     }
     ```
-#### 5.根據 ID 或姓名更新學生資料
+### 5.根據 ID 或姓名更新學生資料
 + **URL**
     + `PUT /api/v1/user/UpdateById`
     + `PUT /api/v1/user/UpdateByName`
