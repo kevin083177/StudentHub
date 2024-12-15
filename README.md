@@ -154,42 +154,41 @@ npm run dev
     ```
 + ###### Response
     - 200
-    ```json
-    {
-        "code": 200,
-        "message": "insert success",
-        "body": {
-            "userName":"tku1234",
-            "name": "王大明",
-            "department": "機械工程系",
-            "grade": "六年級",
-            "class": "B",
-            "email": "tkume1234@tku.com",
-            "_id": "675edf9682c1d21d9087d6ec"
+        ```json
+        {
+            "code": 200,
+            "message": "insert success",
+            "body": {
+                "userName":"tku1234",
+                "name": "王大明",
+                "department": "機械工程系",
+                "grade": "六年級",
+                "class": "B",
+                "email": "tkume1234@tku.com",
+                "_id": "675edf9682c1d21d9087d6ec"
+            }
         }
-    }
-    ```
+        ```
     - 403
-    ```json
-    {
-        "code": 403,
-        "message": "座號已存在"
-    }
-    ```
-    or
-    ```json
-    {
-        "code": 403,
-        "message": "student list is full"
-    }
-    ```
+        ```json
+        {
+            "code": 403,
+            "message": "座號已存在"
+        }
+        ```
+        ```json
+        {
+            "code": 403,
+            "message": "student list is full"
+        }
+        ```
     - 500
-    ```json
-    {
-        "code": 500,
-        "message": "server error"
-    }
-    ```
+        ```json
+        {
+            "code": 500,
+            "message": "server error"
+        }
+        ```
 ### 4.根據 ID 或姓名刪除學生資料
 + **URL** 
     + `DELETE /api/v1/user/DeleteById`
@@ -204,30 +203,30 @@ npm run dev
     ```
 + ###### Response
     - 200
-    ```json
-    {
-        "code": 200,
-        "message": "sucess",
-        "body": {
-            "acknowledged": true,
-            "deletedCount": 1
+        ```json
+        {
+            "code": 200,
+            "message": "sucess",
+            "body": {
+                "acknowledged": true,
+                "deletedCount": 1
+            }
         }
-    }
-    ```
+        ```
     - 404
-    ```json
-    {
-        "code": 404,
-        "message": "user not found"
-    }
-    ```
+        ```json
+        {
+            "code": 404,
+            "message": "user not found"
+        }
+        ```
     - 500
-    ```json
-    {
-        "code": 500,
-        "message": "server error"
-    }
-    ```
+        ```json
+        {
+            "code": 500,
+            "message": "server error"
+        }
+        ```
 ### 5.根據 ID 或姓名更新學生資料
 + **URL**
     + `PUT /api/v1/user/UpdateById`
@@ -249,34 +248,34 @@ npm run dev
     ```
 + ###### Response
     - 200
-    ```json
-    {
-        "code": 200,
-        "message": "Update successful",
-        "body": {
-            "_id": "675ed9f4bc8f2ebc70989e03",
-            "userName": "tkumb1234",
-            "sid": "1",
-            "name": "張佳慧",
-            "department": "資訊管理學系",
-            "grade": "四年級",
-            "class": "A",
-            "email": "tkuee0787@tkuim.com"
+        ```json
+        {
+            "code": 200,
+            "message": "Update successful",
+            "body": {
+                "_id": "675ed9f4bc8f2ebc70989e03",
+                "userName": "tkumb1234",
+                "sid": "1",
+                "name": "張佳慧",
+                "department": "資訊管理學系",
+                "grade": "四年級",
+                "class": "A",
+                "email": "tkuee0787@tkuim.com"
+            }
         }
-    }
-    ```
+        ```
     - 404
-    ```json
-    {
-        "code": 404,
-        "message": "user not found"
-    }
-    ```
+        ```json
+        {
+            "code": 404,
+            "message": "user not found"
+        }
+        ```
     - 500
-    ```json
-    {
-        "code": 500,
-        "message": "server error"
-    }
-    ```
+        ```json
+        {
+            "code": 500,
+            "message": "server error"
+        }
+        ```
 ## 流程圖 / 架構圖
