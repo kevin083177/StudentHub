@@ -1,11 +1,11 @@
 export interface Student{
     _id?: string,
     userName: string,
-    sid?: String,
+    sid?: string,
     name: string,
     department: string,
     grade: string,
     class:string,
-    Email: string,
+    email: string,
     absences?: number|undefined
 }
