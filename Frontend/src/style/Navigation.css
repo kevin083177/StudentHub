@@ -1,0 +1,88 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #19191a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #fff09c; /* Hover 顏色 */
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.nav-button {
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #fff09c;
+}
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 35rem;
+}
+
+.search-form input {
+    padding: 0.6rem;
+    margin-left: 8px;
+    border: none;
+    outline: none;
+    width: 32rem;
+}
+
+.search-form img {
+    width: 25px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    color: #0056b3;
+}
