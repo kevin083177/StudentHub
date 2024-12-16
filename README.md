@@ -278,7 +278,10 @@ npm run dev
             "message": "server error"
         }
         ```
-## 流程圖 / 架構圖
+## 架構圖
 ![diagram](https://i.imgur.com/LIwblC0.png)
+
+## 流程圖
+![flowchart](https://i.imgur.com/zcdhWcT.png)
 
 ## Demo
